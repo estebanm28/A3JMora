@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    background-color: #000000;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    color: #333333;
+    font-family: 'Pacifico', cursive;
+}
+
+.container {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.search {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+form {
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    padding: 15px 10px;
+    outline: none;
+    width: 70%;
+    border: 2px solid #9343e2;
+    border-radius: 5px;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+.li-container {
+    background-color: white;
+    width: 100%;
+    color: #333333;
+    margin-top: 20px;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+li p {
+    margin: 0;
+    padding: 15px;
+    width: 100%;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+.btn-delete {
+    margin-left: auto;
+    border: none;
+    background-color: #e31746;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    outline: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 10%;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+.btn-delete:hover {
+    cursor: pointer;
+    background-color: #ff4d4d;
+}
+
+.btn-add {
+    padding: 15px 20px;
+    border: none;
+    color: white;
+    font-family: 'Pacifico', cursive;
+    background-color: #a519a5;
+    font-size: 1.4rem;
+    outline: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-add:hover {
+    cursor: pointer;
+    background-color: #7d1b7e;
+}
+
+.empty {
+    color: #333333;
+}
+
+li.checked {
+    background-color: #28a745;
+    color: white;
+}
+
+li.deleted {
+    background-color: #dc3545;
+    color: white;
+    animation: fadeOut 2s;
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+input:focus {
+    border-color: #7d1b7e;
+    box-shadow: 0 0 5px rgba(125, 27, 126, 0.5);
+}
+
+li input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
